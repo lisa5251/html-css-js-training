@@ -1,27 +1,116 @@
-body{
+body {
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
-   
+    font-family: Arial, sans-serif;
 }
-#section-1{
-    background-color: rgba(34, 17, 1, 0.788);
-    height: 600px;
-    color: white;
+
+.about-section {
+    padding: 50px 20px;
+    background-color: #e4e3e2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-.container{
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-}
-header{
-    padding: 55px;
+
+.content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
-nav ul li{
-    display: inline-block;
-    padding: 10px 16px;
+
+.text {
+    width: 55%;
+    padding-right: 20px;
 }
-nav ul li.active{
-    background-color: rgba(58, 34, 10, 0.507);
+
+.photo {
+    width: 40%;
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-section h1 {
+    font-size: 2.5em;
+    color: #b33c00;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify; 
+}
+
+nav {
+    background-color: #1f2229;
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+}
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    text-decoration: underline;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #946a23; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+} 
+.text {
+    width: 50%;
+    padding-right: 20px;
+} 
+.photo { 
+    width: 45%;
+}
+.photo img { 
+    width: 100%;
+    border-radius: 10px;
+}
+
+section {
+    padding: 100px 20px;
+    margin-top: 70px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer {
+    background-color:#1f2229;
+    ;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+footer p {
+    margin: 0;
 }
