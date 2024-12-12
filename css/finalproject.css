@@ -9,7 +9,29 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: aliceblue;
+    color: #ffffff;
+}
+#home h1{
+    margin: auto;
+    font-size: 60pX;
+
+}
+#home p{
+    margin: auto;
+    font-size: 20px;
+}
+#home button{
+    background-color: #a75024ef;
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 20px;
+    width: 500px;
+    margin: auto;
+}
+#home button:hover{
+    background-color: #c48a2cd5;
 }
 .about-section {
     padding: 50px 20px;
@@ -113,7 +135,8 @@ section {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 300px; /* Adjust the width as needed */
+    width: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 form {
@@ -149,12 +172,10 @@ button {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #f39c12;
+    background-color: #c99f5c;
 }
 
 footer {
