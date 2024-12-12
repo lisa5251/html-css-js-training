@@ -2,7 +2,15 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
-
+#home{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://th.bing.com/th/id/R.38b38667d672a4d545b10d47ce683e89?rik=LOXTUqzH6jjKCQ&riu=http%3a%2f%2fstudio3.com%2fblog%2fwp-content%2fuploads%2f2015%2f05%2fsteak-potato-restaurant-dinner-food-photography-studio-3.jpg&ehk=blW6ACwhDpa9%2b6aVobLC8FM6MmG0qqpx%2bPsyahCTjO4%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: aliceblue;
+}
 .about-section {
     padding: 50px 20px;
     background-color: #e4e3e2;
@@ -100,6 +108,55 @@ section {
     flex-direction: column;
     justify-content: center;
 }
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px; /* Adjust the width as needed */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    color: #b33c00;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, textarea {
+    font-size: 1em;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #b33c00;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f39c12;
+}
+
 footer {
     background-color:#1f2229;
     ;
