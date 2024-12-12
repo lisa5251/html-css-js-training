@@ -1,38 +1,36 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
 }
-#home{
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('https://th.bing.com/th/id/R.38b38667d672a4d545b10d47ce683e89?rik=LOXTUqzH6jjKCQ&riu=http%3a%2f%2fstudio3.com%2fblog%2fwp-content%2fuploads%2f2015%2f05%2fsteak-potato-restaurant-dinner-food-photography-studio-3.jpg&ehk=blW6ACwhDpa9%2b6aVobLC8FM6MmG0qqpx%2bPsyahCTjO4%3d&risl=&pid=ImgRaw&r=0');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #ffffff;
-}
-#home h1{
-    margin: auto;
-    font-size: 60pX;
 
-}
-#home p{
-    margin: auto;
-    font-size: 20px;
-}
-#home button{
-    background-color: #a75024ef;
+.home-section {
+    background: url('https://th.bing.com/th/id/R.38b38667d672a4d545b10d47ce683e89?rik=LOXTUqzH6jjKCQ&riu=http%3a%2f%2fstudio3.com%2fblog%2fwp-content%2fuploads%2f2015%2f05%2fsteak-potato-restaurant-dinner-food-photography-studio-3.jpg&ehk=blW6ACwhDpa9%2b6aVobLC8FM6MmG0qqpx%2bPsyahCTjO4%3d&risl=&pid=ImgRaw&r=0') no-repeat center center/cover;
     color: white;
-    font-size: 20px;
-    padding: 15px 30px;
-    border-radius: 25px;
-    font-size: 20px;
-    width: 500px;
-    margin: auto;
+    text-align: center;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-#home button:hover{
-    background-color: #c48a2cd5;
+
+.home-section h1, .home-section .slogan {
+    margin: 0;
+    line-height: 1.2; 
+    color: yellow;
 }
+
+.home-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px; 
+}
+
+.home-section .slogan {
+    font-size: 1.5em;
+    color: yellow;
+}
+
 .about-section {
     padding: 50px 20px;
     background-color: #e4e3e2;
@@ -85,7 +83,7 @@ nav {
     display: flex;
 }
 .logo {
-    width: 100px;
+    width: 50px;
     height: auto;
 }
 
@@ -121,15 +119,93 @@ nav a:hover {
     width: 100%;
     border-radius: 10px;
 }
+.contact-section {
+    padding: 50px 20px;
+    background-color: #ffe5b4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
-section {
-    padding: 100px 20px;
-    margin-top: 70px;
-    min-height: 100vh;
+.contact-section .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contact-section .text {
+    width: 60%;
+    color: #333;
+}
+.contact-section form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
+
+.contact-section label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-section input, .contact-section textarea {
+    font-size: 1em;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.contact-section button:hover {
+    background-color: #f39c12;
+}
+
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-section input, .contact-section textarea {
+    font-size: 1em;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.contact-section .logo { 
+    width: 30%; display: flex; 
+    justify-content: right; 
+    align-items: right; 
+} 
+.contact-section .logo img {
+     max-width: 100%; 
+      height: auto;
+      border-radius: 10px; 
+    
+}
+.contact-section button {
+    background-color: #9e4040;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    /**cursor: pointer;**/
+    transition: background-color 0.3s;
+}
+
+.contact-section button:hover {
+    background-color: #500909;
+}
+
 .form-container {
     background-color: white;
     padding: 20px;
@@ -164,23 +240,8 @@ input, textarea {
     border-radius: 5px;
     box-sizing: border-box;
 }
-
-button {
-    background-color: #b33c00;
-    color: white;
-    font-size: 1.2em;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #c99f5c;
-}
-
 footer {
     background-color:#1f2229;
-    ;
     color: white;
     text-align: center;
     padding: 10px 0;
