@@ -3,27 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/finalproject.css" type="text/css">
-    <title>Document</title>
+    <title>Three Sections</title>
+    <link rel="stylesheet" href="css/finalproject.css">
 </head>
 <body>
-   <section id="section-1">
-        <div class="container">
-           <header>
-               <nav>
-                   <ul>
-                       <li class="active"><a href="#">Home</a></li>
-                       <li><a href="#">About</a></li>
-                       <li><a href="#">Work</a></li>
-                       <li><a href="#">Contact</a></li>
-                   </ul>
-               </nav>
-           </header>
-           <div class="main-heading">
-               <h1>HERE TO PRESENT TO YOU WHAT YOU'VE NEVER EXPERIENCED!</h1>
-                   <a href="#">MENU</a>
-           </div>
+    <header>
+     <nav>
+        <img src="projekti final foto/logo-removebg-preview1.png" alt="The Juicy Cut Logo" class="logo">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    </header>
+    <section id="home">
+        <h1>Steakhouse elegance, carnivore delight.</h1>
+        <img src="projekti final foto/mainbackgound.avif" alt="">
+        <!-- <p>This is the home section.</p> -->
+    </section>
+    <section id="about" class="about-section">
+        <div class="content">
+            <div class="text">
+                <h1>About Juicy Cut Steakhouse</h1>
+                <p>Welcome to The Juicy Cut Steakhouse, where every bite is a celebration of flavor and quality. We are passionate about delivering the best dining experience for steak lovers. Our commitment to sourcing premium, ethically raised meats ensures that every cut is tender, juicy, and full of flavor.</p>
+                <p>At The Juicy Cut, we believe in the art of grilling. Our chefs are experts in their craft, using time-honored techniques and modern innovations to create steaks that are second to none. Whether you're here for a special occasion or a casual night out, we promise an unforgettable meal.</p>
+                <p>Join us and savor the difference that quality makes. From our prime cuts to our exceptional service, The Juicy Cut is your destination for an unparalleled steakhouse experience.</p>
+            </div>
+            <div class="photo">
+                <img src="projekti final foto/aboutus.jpg" alt="Steakhouse Photo">
+                <img src="projekti final foto/aboutus2.jpg" alt="Steakhouse Photo">
+
+            </div>
         </div>
-   </section>
+    </section>
+    
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>This is the contact section.</p>
+        <p>At The Juicy Cut Steakhouse, we're always eager to hear from you! Whether you have a question, 
+            want to make a reservation, or simply want to share your dining experience, feel free to reach out to us. Your satisfaction is our top priority,
+             and we're here to ensure you have an unforgettable experience every time you visit.</p>
+             <form>
+                <fieldset>
+                    <legend>Reservation:</legend>
+            
+                    <label for="firstname">First name:</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Emri"><br>
+                    <label for="lastname">Last name:</label>
+                    <input type="text" id="lastname" name="lastname"><br> 
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" requiered><br>
+                    <!--<label for="password">Password :</label>-->
+                    <!--<input type="password" id="password" name="password" size="40"><br><br>
+                    <input type="submit" id="password" name="password"><br>-->
+                </fieldset>
+             </form>
+    </section>
+    <footer>
+        <p>© 2024 Juicy Cut Steakhouse</p>
+    </footer>
 </body>
 </html>
+
+
